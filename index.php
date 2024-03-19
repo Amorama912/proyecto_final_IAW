@@ -61,7 +61,7 @@
 				</tbody>
 			</table>
 			<?php
-				//cerrar la conexion con la base de datos
+				//cerramos la conexion con la base de datos
 				$mysqli->close();
 			?>
 		</div>
