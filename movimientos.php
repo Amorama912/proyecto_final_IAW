@@ -32,13 +32,7 @@
 				<h1>Banco La Campiña</h1>
 			</div>
 			<br>
-			
-			<div class="row">
-				<!-- Registrar -->
-				<a href="añadircliente.php"><button type="button" class="btn btn-primary">Añadir cliente</button></a>
-			</div>
-			<br>
-			<br>
+            <br>
 			
 			<table id="tabla" class="display" style="width:100%">
 				<thead>
@@ -56,11 +50,17 @@
 							echo "<tr>";
 								echo "<td>$fila[cantidad]</td>";
 								echo "<td>$fila[tipo]</td>";
-								echo "<td><a href='eliminar.php?id=$fila[id_cliente]'><button type='button' class='btn btn-danger'>Eliminar cliente</button></td>";
 						}
 					?>
 				</tbody>
 			</table>
+            <br>
+            <br>
+            <div>
+                <a href="hacermovimiento.php"><button type="button" class="btn btn-success">Hacer movimiento</button></a>
+                <a href="index.php"><button type="button" class="btn btn-primary">Volver</button></a>
+            </div>
+
 			<?php
 				//cerramos la conexion con la base de datos
 				$mysqli->close();
