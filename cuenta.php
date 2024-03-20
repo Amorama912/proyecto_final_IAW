@@ -56,6 +56,7 @@
 							echo "<tr>";
 								echo "<td>$fila[saldo]</a></td>";
 								echo "<td>$fila[iban]</td>";
+								echo "<a href='movimientos.php?id_cuenta=$fila[id_cuenta]'><button type='button' class='btn btn-primary'>Ver movimientos</button></a>";
 								echo "<td><a href='eliminar.php?id_cuenta=$fila[id_cuenta]'><button type='button' class='btn btn-danger'>Cerrar cuenta</button></td>";
 						}
 					?>
@@ -67,10 +68,7 @@
             <div>
 				<!-- botones -->
 				<a href="añadircuenta.php"><button type="button" class="btn btn-primary">Añadir cuenta</button></a>
-				<?php
-                echo "<a href='movimientos.php?id_cuenta=$fila[id_cuenta]'><button type='button' class='btn btn-primary'>Ver movimientos</button></a>"
-				?>
-                <a href="index.php"><button type="button" class="btn btn-primary">Volver</button></a>
+				<a href="index.php"><button type="button" class="btn btn-primary">Volver</button></a>
 			</div>
             
 			<?php
