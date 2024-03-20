@@ -2,6 +2,7 @@
     //establezco conexion
     require 'conexion.php';
     $id_cuenta = $_GET['id_cuenta'];
+    $nombre_cliente = $_GET['nombre'];
 
     //preparo una sentencia para obtener los datos que quiero de la bd
     $sql = "SELECT * FROM operacion WHERE id_cuenta=$id_cuenta";
@@ -32,7 +33,13 @@
 				<h1>Banco La Campiña</h1>
 			</div>
 			<br>
-            <br>
+
+            <!-- Titulo con cliente en uso-->
+            <div class="row">
+				<h3>Movimientos de <strong><?php echo $nombre_cliente ?></strong></h3>
+			</div>
+			<br>
+			<br>
 			
 			<table id="tabla" class="display" style="width:100%">
 				<thead>
