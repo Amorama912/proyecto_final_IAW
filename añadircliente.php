@@ -29,7 +29,7 @@
 						<div class="form-group">
 							<!-- Nombre -->
 							<label for="formControlInput" class="form-label">Nombre</label>
-							<input type="text" class="form-control" id="formControlInput" name="nombre" placeholder="Introduce el nombre">
+							<input type="text" class="form-control" id="formControlInput" name="nombre" placeholder="Introduce el nombre" require>
 							</label>
 						</div>
                         <br>
@@ -37,7 +37,7 @@
 						<div class="form-group">
 							<!-- Teléfono -->
 							<label for="formControlInput" class="form-label">Telefono</label>
-							<input type="number" class="form-control" id="formControlInput" name="telefono" placeholder="Introduce el teléfono">
+							<input type="number" class="form-control" id="formControlInput" name="telefono" placeholder="Introduce el teléfono" require>
 						</div>
                         <br>
 							
