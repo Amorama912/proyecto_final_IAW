@@ -12,9 +12,15 @@
 	</head>
 	<body>
 		<div class="container">
+            <div class="row">
+				<h1>Banco La Campiña</h1>
+			</div>
+			<br>
+
 			<div class="row">
 				<h2>Información del cliente</h2>
 			</div>
+            <br>
 			
 			<div class="row">
 				<div class="col-md-8">
@@ -26,12 +32,14 @@
 							<input type="text" class="form-control" id="formControlInput" name="nombre" placeholder="Introduce el nombre">
 							</label>
 						</div>
+                        <br>
 						
 						<div class="form-group">
 							<!-- Teléfono -->
 							<label for="formControlInput" class="form-label">Telefono</label>
 							<input type="number" class="form-control" id="formControlInput" name="telefono" placeholder="Introduce el teléfono">
 						</div>
+                        <br>
 							
 						<div class="form-group">
 							<!-- Registrar -->
