@@ -42,7 +42,7 @@
 			<div class="row">
 				<div class="col-md-8">
 					<!-- Completar atributos de form -->
-					<form action="añadircliente2.php" id="registro" name="registro" autocomplete="off" method="post">
+					<form action="añadircuenta2.php" id="registro" name="registro" autocomplete="off" method="post">
 						<div class="form-group">
 							<!-- Saldo -->
 							<label for="formControlInput" class="form-label">Saldo</label>
@@ -54,7 +54,7 @@
                         <div class="form-group">
 							<!-- Iban -->
 							<label for="formControlInput" class="form-label">Iban</label>
-							<input type="number" class="form-control" id="formControlInput" name="iban" placeholder="Introduce el iban de la cuenta" require>
+							<input type="number" class="form-control" id="formControlInput" name="iban" placeholder="Introduce el iban de la cuenta" min="0" require>
 						</div>
                         <br>
 							
