@@ -53,9 +53,16 @@
                         <br>
 						
 						<div class="form-group">
-							<!-- Teléfono -->
+							<!-- Saldo -->
 							<label for="formControlInput" class="form-label">Saldo</label>
 							<input type="number" class="form-control" id="formControlInput" name="saldo" placeholder="Introduce el saldo de la cuenta" require>
+						</div>
+                        <br>
+
+                        <div class="form-group">
+							<!-- Iban -->
+							<label for="formControlInput" class="form-label">Saldo</label>
+							<input type="number" class="form-control" id="formControlInput" name="iban" placeholder="Introduce el iban de la cuenta" require>
 						</div>
                         <br>
 							
