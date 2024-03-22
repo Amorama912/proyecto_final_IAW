@@ -44,18 +44,10 @@
 					<!-- Completar atributos de form -->
 					<form action="añadircliente2.php" id="registro" name="registro" autocomplete="off" method="post">
 						<div class="form-group">
-							<!-- Nombre -->
-							<label for="formControlInput" class="form-label">Nombre</label>
-							<input type="text" class="form-control" id="formControlInput" name="nombre" placeholder="Introduce el nombre" require>
-                            <input type="hidden" class="form-control" id="formControlInput" name="id_cliente" value="<?php echo $id_cliente ?>">
-							</label>
-						</div>
-                        <br>
-						
-						<div class="form-group">
 							<!-- Saldo -->
 							<label for="formControlInput" class="form-label">Saldo</label>
 							<input type="number" class="form-control" id="formControlInput" name="saldo" placeholder="Introduce el saldo de la cuenta" require>
+                            <input type="hidden" class="form-control" id="formControlInput" name="id_cliente" value="<?php echo $id_cliente ?>">
 						</div>
                         <br>
 

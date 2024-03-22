@@ -16,13 +16,13 @@
 			require 'conexion.php';
 
 			//obtengo los datos introducidos en el formulario
-			$nombre = $_POST['nombre'];
 			$id_cliente = $_POST['id_cliente'];
-            
+            $saldo = $_POST['saldo'];
+            $iban = $_POST['iban'];
 			
 	
 			//se prepara la sentencia sql para agregar los datos
-			$sql = "INSERT INTO cliente (nombre, telefono) VALUES ('$nombre','$telefono')";
+			$sql = "INSERT INTO cuenta (id_cliente, saldo, iban) VALUES ('$id_cliente','$saldo','$iban')";
 	
 			//se ejecuta la sentencia y se guarda el resultado en $resultado
 			$resultado = $mysqli->query($sql);
@@ -31,7 +31,7 @@
 			if($resultado > 0){
 				?>
 				<div class="alert alert-primary" role="alert">
-					<p>Cliente agregado</p>
+					<p>Cuenta agregado</p>
 				</div>
 				<?php
 			} else {
