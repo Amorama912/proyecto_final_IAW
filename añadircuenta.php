@@ -1,3 +1,10 @@
+<?php
+    //establezco conexion
+	require 'conexion.php';
+
+    $id_cliente = $_POST['id_cliente'];
+?>
+
 <!doctype html>
 <html lang="es">
 	<head>
@@ -30,15 +37,15 @@
 							<!-- Nombre -->
 							<label for="formControlInput" class="form-label">Nombre</label>
 							<input type="text" class="form-control" id="formControlInput" name="nombre" placeholder="Introduce el nombre" require>
-                            <input type="hidden" class="form-control" id="formControlInput" name="id_cliente">
+                            <input type="hidden" class="form-control" id="formControlInput" name="id_cliente" value="<?php echo $id_cliente ?>">
 							</label>
 						</div>
                         <br>
 						
 						<div class="form-group">
 							<!-- Teléfono -->
-							<label for="formControlInput" class="form-label">Telefono</label>
-							<input type="number" class="form-control" id="formControlInput" name="telefono" placeholder="Introduce el teléfono" require>
+							<label for="formControlInput" class="form-label">Saldo</label>
+							<input type="number" class="form-control" id="formControlInput" name="saldo" placeholder="Introduce el saldo de la cuenta" require>
 						</div>
                         <br>
 							
