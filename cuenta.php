@@ -70,7 +70,7 @@
             <div>
 				<!-- botones -->
 				<?php
-				echo "<a href='añadircuenta.php?id_cliente=$id_cliente'><button type='button' class='btn btn-primary'>Añadir cuenta</button></a>"
+				echo "<a href='añadircuenta.php?id_cliente=$id_cliente&&nombre_cliente=$nombre_cliente'><button type='button' class='btn btn-primary'>Añadir cuenta</button></a>"
 				?>
 				<a href="index.php"><button type="button" class="btn btn-primary">Volver</button></a>
 			</div>

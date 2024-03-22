@@ -2,7 +2,13 @@
     //establezco conexion
 	require 'conexion.php';
 
-    $id_cliente = $_POST['id_cliente'];
+    $id_cliente = $_GET['id_cliente'];
+
+    $sql = "SELECT * FROM cliente WHERE id_cliente=$id_cliente";
+    $resultado = $mysqli->query($sql);
+
+    //se extrae el registro. no se hace en bucle porque el resultado debe ser unico
+    $fila = $resultado->fetch_assoc();
 ?>
 
 <!doctype html>
@@ -25,7 +31,11 @@
 			<br>
 
 			<div class="row">
-				<h2>Información del cliente</h2>
+				<h2>
+                    Ingreso de nueva cuenta
+                    <br>
+                    Propietario: <?php echo $fila['nombre'] ?>
+                </h2>
 			</div>
             <br>
 			
