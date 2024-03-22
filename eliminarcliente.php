@@ -16,7 +16,7 @@
 			require 'conexion.php';
 
 			//obtengo el id del registro que quiero eliminar
-			$id_cliente = $_GET['id_cliente'];
+			$id_cliente = $_GET['id'];
 	
 			//se prepara la sentencia sql
 			$sql = "DELETE FROM cliente WHERE id_cliente=$id_cliente";
