@@ -61,7 +61,7 @@
 
                         <div class="form-group">
 							<!-- Iban -->
-							<label for="formControlInput" class="form-label">Saldo</label>
+							<label for="formControlInput" class="form-label">Iban</label>
 							<input type="number" class="form-control" id="formControlInput" name="iban" placeholder="Introduce el iban de la cuenta" require>
 						</div>
                         <br>
