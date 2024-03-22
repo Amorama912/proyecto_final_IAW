@@ -58,7 +58,7 @@
 								echo "<td>$fila[iban]</td>";
 								echo "<td>
 										<a href='movimientos.php?id_cuenta=$fila[id_cuenta]&&nombre=$nombre_cliente'><button type='button' class='btn btn-primary'>Ver movimientos</button></a>
-										<a href='eliminar.php?id_cuenta=$fila[id_cuenta]'><button type='button' class='btn btn-danger'>Cerrar cuenta</button>
+										<a href='eliminarcuenta.php?id_cuenta=$fila[id_cuenta]'><button type='button' class='btn btn-danger'>Cerrar cuenta</button>
 									</td>";
 						}
 					?>
