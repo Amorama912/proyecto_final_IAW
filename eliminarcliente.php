@@ -16,10 +16,16 @@
 			require 'conexion.php';
 
 			//obtengo el id del registro que quiero eliminar
-			$id_examen = $_GET['id_examen'];
+			$id_cliente = $_GET['id_cliente'];
 	
 			//se prepara la sentencia sql
-			$sql = "DELETE FROM examenes WHERE id_examen=$id_examen";
+			$sql = "DELETE FROM cliente WHERE id_cliente=$id_cliente";
+	
+			//se ejecuta la sentencia y se guarda el resultado en $resultado
+			$resultado = $mysqli->query($sql);
+
+			//se prepara la sentencia sql
+			$sql = "DELETE FROM cuenta WHERE id_cliente=$id_cliente";
 	
 			//se ejecuta la sentencia y se guarda el resultado en $resultado
 			$resultado = $mysqli->query($sql);

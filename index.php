@@ -55,7 +55,7 @@
 							echo "<tr>";
 								echo "<td><a href='cuenta.php?id_cliente=$fila[id_cliente]&&nombre=$fila[nombre]'>$fila[nombre]</a></td>";
 								echo "<td>$fila[telefono]</td>";
-								echo "<td><a href='eliminar.php?id=$fila[id_cliente]'><button type='button' class='btn btn-danger'>Eliminar cliente</button></td>";
+								echo "<td><a href='eliminarcliente.php?id=$fila[id_cliente]'><button type='button' class='btn btn-danger'>Eliminar cliente</button></td>";
 						}
 					?>
 				</tbody>
