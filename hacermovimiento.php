@@ -1,3 +1,10 @@
+<?php
+    //establezco conexion
+    require 'conexion.php';
+    $id_cuenta = $_GET['id_cuenta'];
+    echo $id_cuenta;
+?>
+
 <!doctype html>
 <html lang="es">
 	<head>
@@ -18,26 +25,30 @@
 			<br>
 
 			<div class="row">
-				<h2>Información del cliente</h2>
+				<h2>
+                    Ingreso de nueva cuenta
+                    <br>
+                    Propietario: <?php echo $fila['nombre'] ?>
+                </h2>
 			</div>
             <br>
 			
 			<div class="row">
 				<div class="col-md-8">
 					<!-- Completar atributos de form -->
-					<form action="añadircliente2.php" id="registro" name="registro" autocomplete="off" method="post">
+					<form action="añadircuenta2.php" id="registro" name="registro" autocomplete="off" method="post">
 						<div class="form-group">
-							<!-- Nombre -->
-							<label for="formControlInput" class="form-label">Nombre</label>
-							<input type="text" class="form-control" id="formControlInput" name="nombre" placeholder="Introduce el nombre" required>
-							</label>
+							<!-- Saldo -->
+							<label for="formControlInput" class="form-label">Saldo</label>
+							<input type="number" class="form-control" id="formControlInput" name="saldo" placeholder="Introduce el saldo de la cuenta" required>
+                            <input type="hidden" class="form-control" id="formControlInput" name="id_cliente" value="<?php echo $id_cliente ?>">
 						</div>
                         <br>
-						
-						<div class="form-group">
-							<!-- Teléfono -->
-							<label for="formControlInput" class="form-label">Telefono</label>
-							<input type="number" class="form-control" id="formControlInput" name="telefono" placeholder="Introduce el teléfono" min="0" required>
+
+                        <div class="form-group">
+							<!-- Iban -->
+							<label for="formControlInput" class="form-label">Iban</label>
+							<input type="number" class="form-control" id="formControlInput" name="iban" placeholder="Introduce el iban de la cuenta" min="0" required>
 						</div>
                         <br>
 							

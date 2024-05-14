@@ -64,7 +64,7 @@
             <br>
             <br>
             <div>
-                <a href="hacermovimiento.php"><button type="button" class="btn btn-success">Hacer movimiento</button></a>
+                <a href="hacermovimiento.php?id_cuenta=<?php echo $id_cuenta; ?>"><button type="button" class="btn btn-success">Hacer movimiento</button></a>
                 <a href="index.php"><button type="button" class="btn btn-primary">Volver</button></a>
             </div>
 
