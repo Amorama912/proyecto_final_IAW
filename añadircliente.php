@@ -37,7 +37,7 @@
 						<div class="form-group">
 							<!-- Teléfono -->
 							<label for="formControlInput" class="form-label">Telefono</label>
-							<input type="number" class="form-control" id="formControlInput" name="telefono" placeholder="Introduce el teléfono" max="9" required>
+							<input type="number" class="form-control" id="formControlInput" name="telefono" placeholder="Introduce el teléfono" min="0" max="9" required>
 						</div>
                         <br>
 							
