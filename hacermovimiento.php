@@ -26,39 +26,17 @@
 
 			<div class="row">
 				<h2>
-                    Ingreso de nueva cuenta
-                    <br>
-                    Propietario: <?php echo $fila['nombre'] ?>
+                    Movimientos disponibles
                 </h2>
 			</div>
             <br>
 			
-			<div class="row">
-				<div class="col-md-8">
-					<!-- Completar atributos de form -->
-					<form action="añadircuenta2.php" id="registro" name="registro" autocomplete="off" method="post">
-						<div class="form-group">
-							<!-- Saldo -->
-							<label for="formControlInput" class="form-label">Saldo</label>
-							<input type="number" class="form-control" id="formControlInput" name="saldo" placeholder="Introduce el saldo de la cuenta" required>
-                            <input type="hidden" class="form-control" id="formControlInput" name="id_cliente" value="<?php echo $id_cliente ?>">
-						</div>
-                        <br>
-
-                        <div class="form-group">
-							<!-- Iban -->
-							<label for="formControlInput" class="form-label">Iban</label>
-							<input type="number" class="form-control" id="formControlInput" name="iban" placeholder="Introduce el iban de la cuenta" min="0" required>
-						</div>
-                        <br>
-							
-						<div class="form-group">
-							<!-- Registrar -->
-							<button type="submit" class="btn btn-primary">Registrar</button>
-						</div>
-					</form>
-				</div>
-			</div>
+			<div class="d-grid gap-2 col-6 mx-auto">
+                <a href="ingresar.php"><button class="btn btn-primary" type="button">Ingresar</button></a>
+                <a href="retirar.php"><button class="btn btn-primary" type="button">Retirar</button></a>
+                <a href="transferir.php"><button class="btn btn-primary" type="button">Transferir</button></a>
+                <a href="transpaso.php"><button class="btn btn-primary" type="button">Transpaso</button></a>
+            </div>
 		</div>
 		
 		<!-- Optional JavaScript -->
