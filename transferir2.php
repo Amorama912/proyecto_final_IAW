@@ -22,7 +22,7 @@
     $cuenta = $_POST['cuenta'];
 
     //Se prepara la sentencia SQL
-    $sql = "INSERT INTO operacion (id_cuenta,cantidad,tipo) VALUES('$id_cuenta','$cantidad','transferir')";
+    $sql = "INSERT INTO operacion (id_cuenta,cantidad,tipo) VALUES('$id_cuenta','$cantidad','transferencia')";
 
     //Se ejecuta la sentencia y se guarda el resultado en $resulado
     $resultado = $mysqli->query($sql);
