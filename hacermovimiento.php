@@ -32,11 +32,9 @@
 			
             <!-- Creamos un bloque de 6/12 de anchura con un centrado automático para los botones -->
 			<div class="d-grid gap-2 col-6 mx-auto">
-				<a href="ingresar.php"><button class="btn btn-primary" type="button">Ingresar</button></a>
-                <a href="retirar.php"><button class="btn btn-primary" type="button">Retirar</button></a>
-                <a href="transferir.php"><button class="btn btn-primary" type="button">Transferir</button></a>
-                <a href="transpaso.php"><button class="btn btn-primary" type="button">Transpaso</button></a>
-            </div>
+  <button class="btn btn-primary" type="button">Button</button>
+  <button class="btn btn-primary" type="button">Button</button>
+</div>
 		</div>
 		
 		<!-- Optional JavaScript -->
