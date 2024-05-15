@@ -12,8 +12,8 @@
 
 	echo $id_cliente;
 	//sentencia para obtener todas las cuentas del cliente
-    //$sql = "SELECT * FROM cuenta WHERE id_cliente LIKE $id_cliente";
-    //$resultado = $mysqli->query($sql);
+    $sql = "SELECT * FROM cuenta WHERE id_cliente LIKE $id_cliente";
+    $resultado = $mysqli->query($sql);
 ?>
 
 <!doctype html>
@@ -56,10 +56,10 @@
 
                         <div class="form-group">
 							<!-- Cuentas Propias -->
-							<select name="cuentas">
+							<select name="cuenta">
 							<?php
 								while ($fila = $resultado->fetch_assoc()) {
-                                	echo "<option value='$fila['id_cuenta']'></option>";
+                                	echo "<option value='$fila[id_cuenta]'>$fila[id_cuenta]</option>";
 								};
 							?>
                             </select>
