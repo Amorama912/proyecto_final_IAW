@@ -44,7 +44,7 @@
 							
 						<div class="form-group">
 							<!-- Añadir -->
-							<button type="submit" class="btn btn-primary">Añadir</button>
+							<a href="ingresar2.php"><button type="submit" class="btn btn-primary">Añadir</button></a>
 						</div>
 					</form>
 				</div>
