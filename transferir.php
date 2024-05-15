@@ -11,7 +11,7 @@
 	$id_cliente = $fila['id_cliente'];
 
 	//sentencia para obtener todas las cuentas del cliente
-    $sql = "SELECT * FROM cuenta WHERE id_cliente LIKE $id_cliente";
+    $sql = "SELECT * FROM cuenta WHERE id_cliente NOT LIKE $id_cliente";
     $resultado = $mysqli->query($sql);
 ?>
 
@@ -36,7 +36,7 @@
 
 			<div class="row">
 				<h2>
-                    Traspasar
+                    Transferir
                 </h2>
 			</div>
             <br>
@@ -55,7 +55,7 @@
 
                         <div class="form-group">
 							<!-- Cuentas Propias -->
-							<label>Cuentas disponibles</label>
+                            <label>Cuentas disponibles</label>
 							<select name="cuenta">
 							<?php
 								while ($fila = $resultado->fetch_assoc()) {
@@ -68,7 +68,7 @@
 							
 						<div class="form-group">
 							<!-- Traspaso -->
-							<button type="submit" class="btn btn-primary">Traspasar</button>
+							<button type="submit" class="btn btn-primary">Transferir</button>
 						</div>
 					</form>
 				</div>
