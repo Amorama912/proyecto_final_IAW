@@ -31,11 +31,11 @@
             <br>
 			
             <!-- Creamos un bloque de 6/12 de anchura con un centrado automático para los botones -->
-			<div class="d-grid gap-2 col-6 mx-auto">
-  				<a href="ingresar.php"><button class="btn btn-primary" type="button">Ingresar</button></a>
-  				<a href="retirar.php"><button class="btn btn-primary" type="button">Retirar</button></a>
-				<a href="transferir.php"><button class="btn btn-primary" type="button">Transferir</button></a>
-				<a href="transpaso.php"><button class="btn btn-primary" type="button">Transpaso</button></a>
+			<div>
+  				<a href="ingresar.php?id_cuenta=<?php echo $id_cuenta; ?>"><button class="btn btn-primary btn-lg" type="button">Ingresar</button></a>
+  				<a href="retirar.php?id_cuenta=<?php echo $id_cuenta; ?>"><button class="btn btn-primary btn-lg" type="button">Retirar</button></a>
+				<a href="transferir.php?id_cuenta=<?php echo $id_cuenta; ?>"><button class="btn btn-primary btn-lg" type="button">Transferir</button></a>
+				<a href="transpasar.php?id_cuenta=<?php echo $id_cuenta; ?>"><button class="btn btn-primary btn-lg" type="button">Transpasar</button></a>
 			</div>
 		</div>
 		
