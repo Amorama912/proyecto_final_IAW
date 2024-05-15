@@ -36,6 +36,7 @@
   				<a href="retirar.php?id_cuenta=<?php echo $id_cuenta; ?>"><button class="btn btn-primary btn-lg" type="button">Retirar</button></a>
 				<a href="transferir.php?id_cuenta=<?php echo $id_cuenta; ?>"><button class="btn btn-primary btn-lg" type="button">Transferir</button></a>
 				<a href="transpasar.php?id_cuenta=<?php echo $id_cuenta; ?>"><button class="btn btn-primary btn-lg" type="button">Transpasar</button></a>
+				<a href="index.php"><button class="btn btn-warning btn-lg" type="button">Volver</button></a>
 			</div>
 		</div>
 		
