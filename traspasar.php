@@ -2,6 +2,18 @@
     //establezco conexion
     require 'conexion.php';
     $id_cuenta = $_GET['id_cuenta'];
+
+	//sentencia para traer id_cliente
+    $sql = "SELECT * FROM cuenta WHERE id_cuenta LIKE $id_cuenta";
+    $resultado2 = $mysqli->query($sql);
+    $fila = $resultado2->fetch_assoc();
+
+	$id_cliente = $fila['id_cliente'];
+
+	echo $id_cliente;
+	//sentencia para obtener todas las cuentas del cliente
+    //$sql = "SELECT * FROM cuenta WHERE id_cliente LIKE $id_cliente";
+    //$resultado = $mysqli->query($sql);
 ?>
 
 <!doctype html>
@@ -25,7 +37,7 @@
 
 			<div class="row">
 				<h2>
-                    Retirar
+                    Traspasar
                 </h2>
 			</div>
             <br>
@@ -33,7 +45,7 @@
 			<div class="row">
 				<div class="col-md-8">
 					<!-- Completar atributos de form -->
-					<form action="retirar2.php" id="registro" name="registro" autocomplete="off" method="post">
+					<form action="traspasar2.php" id="registro" name="registro" autocomplete="off" method="post">
 						<div class="form-group">
 							<!-- Saldo -->
 							<label for="formControlInput" class="form-label">Cantidad(€)</label>
@@ -41,10 +53,22 @@
                             <input type="hidden" class="form-control" id="formControlInput" name="id_cuenta" value="<?php echo $id_cuenta; ?>">
 						</div>
                         <br>
+
+                        <div class="form-group">
+							<!-- Cuentas Propias -->
+							<select name="cuentas">
+							<?php
+								while ($fila = $resultado->fetch_assoc()) {
+                                	echo "<option value='$fila['id_cuenta']'></option>";
+								};
+							?>
+                            </select>
+						</div>
+                        <br>
 							
 						<div class="form-group">
-							<!-- Retirar -->
-							<button type="submit" class="btn btn-primary">Retirar</button>
+							<!-- Traspaso -->
+							<button type="submit" class="btn btn-primary">Traspasar</button>
 						</div>
 					</form>
 				</div>
