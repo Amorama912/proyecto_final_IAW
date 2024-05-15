@@ -30,12 +30,11 @@
 			</div>
             <br>
 			
-            <!-- Creamos un bloque de 6/12 de anchura con un centrado automático para los botones -->
 			<div>
   				<a href="ingresar.php?id_cuenta=<?php echo $id_cuenta; ?>"><button class="btn btn-primary btn-lg" type="button">Ingresar</button></a>
   				<a href="retirar.php?id_cuenta=<?php echo $id_cuenta; ?>"><button class="btn btn-primary btn-lg" type="button">Retirar</button></a>
 				<a href="transferir.php?id_cuenta=<?php echo $id_cuenta; ?>"><button class="btn btn-primary btn-lg" type="button">Transferir</button></a>
-				<a href="transpasar.php?id_cuenta=<?php echo $id_cuenta; ?>"><button class="btn btn-primary btn-lg" type="button">Transpasar</button></a>
+				<a href="traspasar.php?id_cuenta=<?php echo $id_cuenta; ?>"><button class="btn btn-primary btn-lg" type="button">Traspasar</button></a>
 				<a href="index.php"><button class="btn btn-warning btn-lg" type="button">Volver</button></a>
 			</div>
 		</div>
