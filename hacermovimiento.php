@@ -2,7 +2,6 @@
     //establezco conexion
     require 'conexion.php';
     $id_cuenta = $_GET['id_cuenta'];
-    echo $id_cuenta;
 ?>
 
 <!doctype html>
@@ -26,7 +25,7 @@
 
 			<div class="row">
 				<h2>
-                    Movimientos disponibles
+                    Movimientos disponibles <?php echo $id_cuenta; ?>
                 </h2>
 			</div>
             <br>
