@@ -25,7 +25,7 @@
 
 			<div class="row">
 				<h2>
-                    Ingresar
+                    Retirar
                 </h2>
 			</div>
             <br>
@@ -33,7 +33,7 @@
 			<div class="row">
 				<div class="col-md-8">
 					<!-- Completar atributos de form -->
-					<form action="ingresar2.php" id="registro" name="registro" autocomplete="off" method="post">
+					<form action="retirar2.php" id="registro" name="registro" autocomplete="off" method="post">
 						<div class="form-group">
 							<!-- Saldo -->
 							<label for="formControlInput" class="form-label">Cantidad(€)</label>
@@ -44,7 +44,7 @@
 							
 						<div class="form-group">
 							<!-- Añadir -->
-							<button type="submit" class="btn btn-primary">Añadir</button>
+							<button type="submit" class="btn btn-primary">Retirar</button>
 						</div>
 					</form>
 				</div>
